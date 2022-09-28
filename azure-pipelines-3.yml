@@ -12,10 +12,10 @@ variables:
   azureSubscription: 'c3632c52-30f6-42ba-ae41-9c0416129a2f'
 
   # Web app name
-  webAppName: 'tailspin-space-game-56789'
+  webAppName: 'web-app-artifact-1234'
 
   # Environment name
-  environmentName: 'tailspin-space-game-56789'
+  environmentName: 'web-app-artifact-1234'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -60,7 +60,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: tailspin-space-game-56789'
+            displayName: 'Azure Web App Deploy: web-app-artifact-1234'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
